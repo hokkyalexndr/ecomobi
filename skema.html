@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Schema with Fallback</title>
+</head>
+<body>
+    <a href="googlechrome://www.goeco.mobi/p0ts0zRd" onclick="openLink(this); return false;">Buka di Google Chrome</a>
+
+    <script>
+        function openLink(anchor) {
+            var url = anchor.href;
+            setTimeout(function() {
+                window.location = "https://www.goeco.mobi/p0ts0zRd";
+            }, 500);
+
+            window.location = url;
+        }
+    </script>
+</body>
+</html>
